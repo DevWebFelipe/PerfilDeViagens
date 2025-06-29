@@ -1,0 +1,18 @@
+@media (max-width: 768px) {
+  #profile {
+    justify-content: center;
+  }
+
+  #info {
+    margin-top: 20px;
+    justify-content: center;
+  }
+
+  nav ul li:last-child img {
+    display: none;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+  }
+}
