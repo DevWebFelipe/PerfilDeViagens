@@ -1,5 +1,6 @@
 #footer {
   padding-block: 1.5rem;
+  font: var(--text-md);
 
   @media (width <= 768px) {
     padding-block: 1rem;
