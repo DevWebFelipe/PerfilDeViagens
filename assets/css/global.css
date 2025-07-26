@@ -5,6 +5,7 @@
 }
 
 :root {
+  /* cores */
   --brand-color: #ef5f4c;
 
   --background-color: #ffffff;
@@ -15,6 +16,7 @@
   --text-color-primary: #313131;
   --text-color-secondary: #6c6c6c;
 
+  /* fontes */
   --font-family: "Poppins", sans-serif;
   --text-lg: bold 32px/125% var(--font-family);
   --text-md: 14px/170% var(--font-family);
@@ -28,6 +30,13 @@ body {
   background-color: var(--background-color);
 }
 
+h1,
+h2,
+h3 {
+  font-family: var(--font-family);
+  color: var(--text-color-primary);
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -39,11 +48,70 @@ a:hover {
 }
 
 .container {
-  padding-inline: 32px;
+  padding-inline: 2rem;
   max-width: 1280px;
-  margin-inline: auto;
 }
 
 .bg-surface-color {
   background-color: var(--surface-color);
+}
+
+.desktop-only {
+  display: block;
+}
+
+.flex {
+  display: flex;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.gap-1 {
+  gap: 1rem;
+}
+
+.gap-2 {
+  gap: 2rem;
+}
+
+justify-center {
+  justify-content: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.gap-block-0\.25 {
+  gap: 0.25rem;
+}
+
+.gap-block-0\.5 {
+  gap: 0.5rem;
+}
+
+@media (width <= 768px) {
+  .desktop-only {
+    display: none;
+  }
+
+  .container {
+    max-width: 360px;
+    padding-inline: 1rem;
+  }
 }

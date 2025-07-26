@@ -5,7 +5,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Travelgram</title>
     <link rel="stylesheet" href="assets/css/index.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
@@ -13,93 +13,66 @@
     />
   </head>
   <body>
-    <div class="bg-surface-color">
-      <nav class="container">
-        <a href="#" id="logo">
-          <img
-            src="assets/icons/Logo.svg"
-            alt="Logo do site, imagem de um mine globo terrestre e a palavra Travelgram cuja tradução é perfil de viagem"
-          />
-        </a>
+    <header id="header" class="container">
+      <div class="menu flex space-between">
+        <img src="assets/icons/Logo.svg" alt="Logo do site Travelgram" />
 
-        <ul id="primary-menu">
-          <li>
-            <a href="#"
-              ><img src="assets/icons/MagnifyingGlass.svg" alt="Ícone de lupa"
-            /></a>
-          </li>
-          <li><a href="#">Explorar</a></li>
-          <li><a href="#">Minhas viagens</a></li>
-          <li>
-            <a href="#"></a
-            ><img
-              src="assets/img/Profile pic.png"
-              alt="Imagem de Isabela Torres"
-            />
-          </li>
-        </ul>
-      </nav>
-      <header>
-        <div class="container">
-          <div id="profile">
-            <img
-              src="assets/img/Profile pic.png"
-              alt="Imagem de Isabela Torres"
-            />
-            <div>
-              <h1>Isabela Torres</h1>
-              <p>
-                Amante de viagens, cultura e gastronomia. 🌍✈️ <br />
-                Aqui compartilho as histórias registradas em cada clique,
-                explorando cantinhos fascinantes do nosso planeta a partir da
-                movimentada cidade de São Paulo. 🏙️📸
-              </p>
-            </div>
-          </div>
-
-          <ul id="info">
+        <nav>
+          <ul class="flex gap-1 align-center">
             <li>
-              <img
-                src="assets/icons/MapPin.svg"
-                alt="Ícone de localização"
-              /><span href="#">São Paulo, Brazil</span>
+              <a href="#">
+                <img
+                  src="assets/icons/MagnifyingGlass.svg"
+                  alt="Ícone de pesquisa"
+                />
+              </a>
             </li>
+            <li class="desktop-only"><a href="#">Explorar</a></li>
+            <li class="desktop-only"><a href="#">MInhas viagens</a></li>
             <li>
-              <img
-                src="assets/icons/AirplaneTilt.svg"
-                alt="Ícone de avião"
-              /><span href="#">37 países</span>
-            </li>
-            <li>
-              <img
-                src="assets/icons/Image.svg"
-                alt="Ícone de fotografia"
-              /><span href="#">240 fotos</span>
+              <a href="#">
+                <img
+                  class="profile-pic"
+                  src="assets/img/Profile pic.png"
+                  alt="Foto de perfil do usuário"
+                />
+              </a>
             </li>
           </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="profile" class="container flex align-center space-between">
+        <div class="profile-container flex align-center gap-2">
+          <img src="assets/img/Profile pic.png" alt="Imagem de perfil" />
+          <div class="profile-info">
+            <h1>Isabela Torres</h1>
+            <p>
+              Amante de viagens, cultura e gastronomia. 🌍✈️ Aqui compartilho as
+              histórias registradas em cada clique, explorando cantinhos
+              fascinantes do nosso planeta a partir da movimentada cidade de São
+              Paulo. 🏙️📸
+            </p>
+          </div>
         </div>
-      </header>
-    </div>
 
-    <main class="container">
-      <img src="assets/img/Image 01.png" alt="" />
-      <img src="assets/img/Image 02.png" alt="" />
-      <img src="assets/img/Image 03.png" alt="" />
-      <img src="assets/img/Image 04.png" alt="" />
-      <img src="assets/img/Image 05.png" alt="" />
-      <img src="assets/img/Image 06.png" alt="" />
-      <img src="assets/img/Image 07.png" alt="" />
-      <img src="assets/img/Image 08.png" alt="" />
-      <img src="assets/img/Image 09.png" alt="" />
-      <img src="assets/img/Image 10.png" alt="" />
-      <img src="assets/img/Image 11.png" alt="" />
-      <img src="assets/img/Image 12.png" alt="" />
+        <div class="profile-posts flex gap-1 flex-column ">
+          <h3 class="flex align-center gap-block-0.5">
+            <img src="assets/icons/MapPin.svg" alt="ícone de localização" />
+            <span>São paulo, Brazil</span>
+          </h3>
+          <h3 class="flex align-center gap-block-0.5">
+            <img src="assets/icons/AirplaneTilt.svg" alt="ícone de avião simbolizando viagens" />
+            <span>37 países<span>
+          </h3>
+          <h3 class="flex align-center gap-block-0.5">
+            <img src="assets/icons/Image.svg" alt="ícone de galeria" />
+            <span>240 fotos</span>
+          </h3>
+        </div>
+      </section>
     </main>
-
-    <footer class="container">
-      <span> Travelgram &copy; 2025 </span>
-      <span> Termos de uso </span>
-      <span> Política de privacidade </span>
-    </footer>
   </body>
 </html>

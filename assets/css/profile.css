@@ -1,0 +1,37 @@
+#profile {
+  padding-block: 2rem;
+
+  & .profile-container {
+    max-width: 37rem;
+  }
+
+  & h3 {
+    font: var(--text-md);
+  }
+
+  & .profile-posts {
+    margin-right: 7rem;
+  }
+
+  & h1 {
+    font: var(--text-lg);
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (width <= 768px) {
+  .profile-container {
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    & h1 {
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  #profile {
+    flex-wrap: wrap;
+    padding-inline: 2rem;
+    gap: 2rem;
+  }
+}
