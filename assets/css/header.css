@@ -1,4 +1,6 @@
 #header {
+  background-color: var(--surface-color);
+
   & .menu {
     padding-block: 1.25rem;
 

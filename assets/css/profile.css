@@ -1,11 +1,12 @@
 #profile {
+  background-color: var(--surface-color);
   padding-block: 2rem;
 
   & .profile-container {
     max-width: 37rem;
   }
 
-  & h3 {
+  & span {
     font: var(--text-md);
   }
 
