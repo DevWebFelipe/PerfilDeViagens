@@ -1,0 +1,11 @@
+#footer {
+  padding-block: 1.5rem;
+
+  @media (width <= 768px) {
+    padding-block: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+}

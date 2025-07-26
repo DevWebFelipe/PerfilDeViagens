@@ -1,4 +1,4 @@
-#galery {
+#gallery {
   margin-block: 1.5rem;
 
   & img {
@@ -15,8 +15,13 @@
   }
 
   @media (width <= 768px) {
-    & .galery-container {
+    & .gallery-container {
       padding-inline: 1rem;
+    }
+
+    & img {
+      width: 328px;
+      height: 328px;
     }
   }
 }
